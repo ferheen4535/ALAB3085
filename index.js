@@ -41,6 +41,46 @@ function sumArray(ArrayOfNumbers) {
          console.log(`Longest string in the array is:`, longestString([45, 68, 53, 25]));
         
 
-      
-      //loop starting first element in the array//
  
+//Take an array of strings, and a number and return an array of the strings that are longer than the given number. //
+let arr = ["Coding", "is", "fun"];
+let num = 5;
+function returnLargerArray(arr , num) {   //declare we want to find array elements larger than 5//
+  return arr.filter(function (word) {      //filter through the words to find the lon
+    return word.length > num;           //if the words are longer than 5 letter//
+});
+}
+console.log(returnLargerArray( ["Coding", "is", "fun",], 5))   //code
+
+///Take a number, n, and print every number between 1 and n without using loops. Use recursion.//
+
+let rNum = 5
+printRecursiveNum(num,1);
+function printRecursiveNum(num,currentValue) { 
+  if (currentValue>num) { 
+      return; 
+  } 
+  console.log(currentValue); 
+  printRecursiveNum(num, currentValue + 1); 
+} 
+
+
+//source: https://www.geeksforgeeks.org/ //
+ //source: stackoverflow//
+
+
+console.log("---Part 2---")
+
+csvData = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+  { id: "48", name: "Barry", occupation: "Runner", age: "25" },
+  { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+  { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+  { id: "7", name: "Bilbo", occupation: "None", age: "111" }]
+
+  const sortByage = (a,b) => {
+    return a.age 
+  };
+
+  csvData.sort(age);
+
+  console.log(sortByage);
