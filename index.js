@@ -71,6 +71,8 @@ function printRecursiveNum(num,currentValue) {
 
 console.log("---Part 2---")
 
+//Sort the array by age.///
+
 csvData = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
   { id: "48", name: "Barry", occupation: "Runner", age: "25" },
   { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
@@ -79,4 +81,33 @@ csvData = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
 
   csvData.sort((a,b) => Number(a.age) - Number(b.age));
 
-  console.log(csvData);
+  console.log(`CVS Data sorted by age`, csvData);
+
+//Filter the array to remove entries with an age greater than 50.//
+
+let filterAges = csvData.filter((person) => {
+
+return person.age > 50
+
+});
+
+console.log(`Filter out people older than 50:`, filterAges);
+
+//source freecodecamp.org//
+
+//Map the array to change the “occupation” key to “job” and increment every age by 1.//
+
+let changecsvdata = csvData.map(person => ( {
+...person,
+age: person.age + 1,
+job: person.occupation
+
+}
+));
+
+changecsvdata = changecsvdata.map(({ occupation, ...rest}) => rest);
+
+console.log(changecsvdata);
+
+//source freecodecamp.org//
+
