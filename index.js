@@ -77,10 +77,6 @@ csvData = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
   { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
   { id: "7", name: "Bilbo", occupation: "None", age: "111" }]
 
-  const sortByage = (a,b) => {
-    return a.age 
-  };
+  csvData.sort((a,b) => Number(a.age) - Number(b.age));
 
-  csvData.sort(age);
-
-  console.log(sortByage);
+  console.log(csvData);
