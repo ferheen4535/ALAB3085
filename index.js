@@ -112,5 +112,11 @@ console.log(changecsvdata);
 
 //source freecodecamp.org//
 
+console.log("----")
 //Use the reduce method to calculate the sum of the ages.//
-let SumOfAges = csvData
+let SumOfAges = csvData.reduce((total, person) => total + Number(person.age), 0);
+console.log(`Sum of the ages is:`, SumOfAges);
+
+
+const average = SumOfAges / csvData.length;
+console.log(`The average age is:`, average);
