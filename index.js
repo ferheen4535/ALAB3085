@@ -96,6 +96,7 @@ console.log(`Filter out people older than 50:`, filterAges);
 //source freecodecamp.org//
 
 //Map the array to change the “occupation” key to “job” and increment every age by 1.//
+console.log("Change occupation to Job and increase age by 1 number")
 
 let changecsvdata = csvData.map(person => ( {
 ...person,
@@ -111,3 +112,5 @@ console.log(changecsvdata);
 
 //source freecodecamp.org//
 
+//Use the reduce method to calculate the sum of the ages.//
+let SumOfAges = csvData
