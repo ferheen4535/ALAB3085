@@ -120,3 +120,14 @@ console.log(`Sum of the ages is:`, SumOfAges);
 
 const average = SumOfAges / csvData.length;
 console.log(`The average age is:`, average);
+
+console.log(`-----`)
+console.log(`---Part 3---`)
+//Take an object and increment its age field.//
+
+function increment(obj) {
+  obj.age = (obj.age || 0 ) + 1;
+  return obj;
+  
+}
+console.log(increment)
